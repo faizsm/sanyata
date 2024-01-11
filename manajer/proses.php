@@ -5,7 +5,7 @@ global $koneksi;
 $username= $_POST['username'];
 $password= $_POST['password'];
 
-$sql= "SELECT*FROM petugas WHERE username ='$username' AND password='$password'";
+$sql= "SELECT*FROM petugas WHERE username ='$username' AND pass='$password'";
 $query= mysqli_query($koneksi,$sql);
 if(mysqli_num_rows($query)>0){
     $data = mysqli_fetch_array($query);
